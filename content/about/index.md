@@ -7,7 +7,7 @@ eleventyNavigation:
 # About Me
 ![](https://novafurry.win/img/bio.png)
 ## Socials
-
+<img src="(https://logo.clearbit.com/youtube.com">
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzY2NDc2NzJdfQ==
+eyJoaXN0b3J5IjpbMTA1MzY5ODcwXX0=
 -->
