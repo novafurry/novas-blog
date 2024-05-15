@@ -1,7 +1,7 @@
 ---
 title: My (old) Home Audio Setup
 description: How I used a Windows laptop to make dumb speakers smart
-date: 24-04-24
+date: 24-04-w024
 tags: [windows, audio, bluetooth, spotify]
 ---
 # My Home Audio Setup
@@ -29,5 +29,5 @@ tags: [windows, audio, bluetooth, spotify]
 14. Fill out the popup
 15. Put it in a cupboard, and optionally enable a setting in the bios to auto boot when power is connected
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjc0NDAyMTBdfQ==
+eyJoaXN0b3J5IjpbMzMxMTU3NzQ5XX0=
 -->
