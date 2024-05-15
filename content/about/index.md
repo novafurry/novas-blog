@@ -12,7 +12,7 @@ eleventyNavigation:
 ### <img height=32 src="https://logo.clearbit.com/bark.lgbt" alt="Mastodon Logo" style="vertical-align:text-bottom"> Mastodon
 ### <img height=32 src="https://logo.clearbit.com/tiktok.com" alt="TikTok Logo" style="vertical-align:text-bottom"> TikTok
 
-
+Mastodon
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NjQ2Mjc5Nl19
+eyJoaXN0b3J5IjpbMTM3Njg2Mzg0MywxNDU2NDYyNzk2XX0=
 -->
