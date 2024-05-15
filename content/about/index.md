@@ -10,7 +10,7 @@ eleventyNavigation:
 ### <img src="https://www.youtube.com/s/desktop/a6564fb2/img/favicon_32x32.png" alt="YouTube Logo" style="vertical-align:text-bottom"> YouTube
 ### <img height=32 src="https://logo.clearbit.com/twitter.com" alt="TwitterLogo" style="vertical-align:text-bottom"> Twitter
 ### <img height=32 src="https://logo.clearbit.com/discord.com" alt="Mastodon Logo" style="vertical-align:text-bottom"> Mastodon
-### <img height=32 src="https://logo.clearbit.com/github.com" alt="TikTok Logo" style="vertical-align:text-bottom"> TikTok
+### <img height=32 src="https://logo.clearbit.com/tl.com" alt="TikTok Logo" style="vertical-align:text-bottom"> TikTok
 
 <svg width="140" height="48" xmlns="http://www.w3.org/2000/svg" style="border-radius:8px">
   <!-- Main rectangle with border radius and white border -->
@@ -37,6 +37,6 @@ eleventyNavigation:
 </svg>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMjQ1MzA1OSw0NDQ4OTgxNDIsMjA1MD
-QwMTYwNywxNDU2NDYyNzk2XX0=
+eyJoaXN0b3J5IjpbODk2MTcwMDA4LDQ0NDg5ODE0MiwyMDUwND
+AxNjA3LDE0NTY0NjI3OTZdfQ==
 -->
