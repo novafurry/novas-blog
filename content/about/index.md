@@ -5,4 +5,9 @@ eleventyNavigation:
   order: 3
 ---
 # About Me
-![](/img/bio.png)
+![](https://novafurry.win/img/bio.png)
+## Socials
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE2MzY2NDc2NzJdfQ==
+-->
