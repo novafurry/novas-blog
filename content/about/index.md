@@ -7,8 +7,8 @@ eleventyNavigation:
 # About Me
 ![](https://novafurry.win/img/bio.png)
 ## Socials
-[<img height=48 src=https://novafurry.win/img/YT.png>](http://youtube.com/@novafurry) [<img height=48 src=https://novafurry.win/img/Tk.png>](http://tiktok.com/@nova.furry) <img height=48 src=https://novafurry.win/img/Mas.png> <img height=48 src=https://novafurry.win/img/Tg.png> <img height=48 src=https://novafurry.win/img/Dsc.png> <img height=48 src=https://novafurry.win/img/Gh.png> <img height=48 src=https://novafurry.win/img/Gn.png>
+[<img height=48 src=https://novafurry.win/img/YT.png>](http://youtube.com/@novafurry) [<img height=48 src=https://novafurry.win/img/Tk.png>](http://tiktok.com/@nova.furry) [<img height=48 src=https://novafurry.win/img/Mas.png>](https://bark.lgbt/nova) [<img height=48 src=https://novafurry.win/img/Tg.png>](http://t.me/@novascommunity) [<img height=48 src=https://novafurry.win/img/Gh.png>](http://github.com/novafurry) [<img height=48 src=https://novafurry.win/img/Gn.png>](mailto:nova@novafurry.win)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMTA3MTExOCwtMTYzNjY0NzY3Miw0ND
-Q4OTgxNDIsMjA1MDQwMTYwNywxNDU2NDYyNzk2XX0=
+eyJoaXN0b3J5IjpbLTE3MTk2MjM5MzIsLTE2MzY2NDc2NzIsND
+Q0ODk4MTQyLDIwNTA0MDE2MDcsMTQ1NjQ2Mjc5Nl19
 -->
