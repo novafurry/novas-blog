@@ -7,8 +7,8 @@ tags: [novaOS]
 # Related Links
 [Issues](https://github.com/novathefox/NovaOS/issues) • [Post Feature
 Suggestion](https://go.novafurry.win/novaos.feature.suggest) • [Feature
-Roadmap](https://go.novafurry.win/novaos.feature.plans) • [Git Repo](https://github.com/novathefox/NovaOS/) • [Main
-Instance](https://novathefox.github.io/novaos)
+Roadmap](https://go.novafurry.win/novaos.feature.plans) • [Git Repo](https://github.com/novafurry/NovaOS/) • [Main
+Instance](https://novafurry.github.io/novaos)
 # NovaOS Miniblog
 <div style="padding-left:10px;">
     <span style="font-size: 1.5em; font-weight:bold;">Nova OS Update Time! <small
@@ -34,5 +34,5 @@ Instance](https://novathefox.github.io/novaos)
 
 _I am in awe of myself, if even 13 year old me (i'm 15 as of writing this) saw this, she'd be in awe tbh_
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMjkzMjQ0XX0=
+eyJoaXN0b3J5IjpbLTUwNzM1MzI0OF19
 -->
