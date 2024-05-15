@@ -7,22 +7,48 @@ numberOfLatestPostsToShow: 3
 ---
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+<h1>Latest Posts</h1>
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
-{% include "postslist.njk" %}
+<ol reversed>
+	{% set currentYear = "" %}
+	{% for post in postslist | reverse %}
+		{% if showYear %}
+			{% set postYear = post.date.getFullYear() %}
+			{% if currentYear != postYear %}
+			{% set currentYear = postYear %}
+			<h3>{{ postYear }}</h3>
+			{% endif %}
+		{% endif %}
+			{% if post.data.layout != "layouts/home.njk" %}
+			<li class=" mb-10 list-none">
+				<a style="font-size:1.5em;font-weight:bold;" href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a><br><span style="font-size:regular;font-weight:regular !important;">{% if post.data.tags.length > 1 %}Tagged {{post.data.tags | string | replace("project,", "") | replace(",", ", ")}} - {% endif %}Posted {{post.date | postDate}}</span>
+			</li>
+			{% endif %}
+	{% endfor %}
+</ol>
 
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
-{% endif %}
+{% set postsCount = collections.project | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+<h1>Latest Projects</h1>
 
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}
+{% set postslist = collections.project | head(-1 * numberOfLatestPostsToShow) %}
+{% set postslistCounter = postsCount %}
+<ol reversed>
+	{% set currentYear = "" %}
+	{% for post in postslist | reverse %}
+		{% if showYear %}
+			{% set postYear = post.date.getFullYear() %}
+			{% if currentYear != postYear %}
+			{% set currentYear = postYear %}
+			<h3>{{ postYear }}</h3>
+			{% endif %}
+		{% endif %}
+			{% if post.data.layout != "layouts/home.njk" %}
+			<li class=" mb-10 list-none">
+				<a style="font-size:1.5em;font-weight:bold;" href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a><br><span style="font-size:regular;font-weight:regular !important;">{% if post.data.tags.length > 1 %}Tagged {{post.data.tags | string | replace("project,", "") | replace(",", ", ")}} - {% endif %}Posted {{post.date | postDate}}</span>
+			</li>
+			{% endif %}
+	{% endfor %}
+</ol>

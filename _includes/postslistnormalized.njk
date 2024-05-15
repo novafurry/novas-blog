@@ -10,7 +10,7 @@
 		{% endif %}
 			{% if post.data.layout != "layouts/home.njk" %}
 			<li class=" mb-10 list-none">
-				<h2><a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h2>
+				<a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a> <small>{{post.date | postDate}}</small>
 			</li>
 			{% endif %}
 	{% endfor %}

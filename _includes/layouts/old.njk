@@ -5,13 +5,13 @@ layout: layouts/base.njk
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 <h1>{{ title }}</h1>
-
+{%- css %}{% include "public/css/message-box.css" %}{% endcss %}
+<div class="message-box">
+	<b><span style="padding:5px; height:30px; text-align:center;width:30px; border-radius:100%; display:inline-block; background:rgba(255,0,0,0.8); user-select:none;margin-right:20px;">!</span> Old Post</b><br>
+	<p>You are viewing an older post. Information may not be up-to date and should not be relied on</p>
+</div>
 <ul class="post-metadata">
-	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-	{%- for tag in tags | filterTagList %}
-	{%- set tagUrl %}/tag/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
-	{%- endfor %}
+	<li>Originally posted on: <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
 </ul>
 
 {{ content | safe }}
