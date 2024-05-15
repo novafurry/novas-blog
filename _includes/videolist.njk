@@ -1,4 +1,3 @@
-<ol reversed>
 	{% set currentYear = "" %}
 	{% for post in postslist | reverse %}
 		{% if showYear %}
@@ -9,9 +8,17 @@
 			{% endif %}
 		{% endif %}
 			{% if post.data.layout != "layouts/home.njk" %}
-			<li class=" mb-10 list-none">
-				<h2><a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h2>
-			</li>
+			<div class=" mb-10 list-none" style="width:199px">
+				<b><a style="text-align:left;display: -webkit-box;-webkit-line-clamp: 2;line-clamp: 2; -webkit-box-orient: vertical;overflow:hidden;" href="{{ post.url | url }}">
+					<img src="/videoCover/{{ post.data.videoCoverURL }}" width=199 height=100><br>
+					{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
+				</a></b>
+				<i><span style="text-align:justify; width:100%;display:inline-block;">{{ post.date | readableDate("dd-LL-yyyy") }} • {{post.data.videoLen}}</span></i>
+			</div>
 			{% endif %}
 	{% endfor %}
-</ol>
+<style>
+.mb-10.list-none {
+    display:inline-block;
+}
+</style>
