@@ -77,7 +77,16 @@ module.exports = function (eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+		tags2 = tags;
+		tags2.shift();
+		return (tags2 || []).filter(tag => ["all", "nav", "post", "posts", "yt", "old","project"].indexOf(tag) === -1);
+	});
+	eleventyConfig.addFilter("rmFirst", function filterTagList(tags) {
+		var tags2 = tags;
+		delete tags2[0];
+		tags3 = tags2.join(", ")
+		tags3 = tags3.replace(", ","")
+		return tags3;
 	});
 
 	// Customize Markdown library settings:
@@ -105,9 +114,9 @@ module.exports = function (eleventyConfig) {
 	// https://www.11ty.dev/docs/copy/#emulate-passthrough-copy-during-serve
 
 	// eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
-	eleventyConfig.addCollection("hi", function (collectionApi) {
+	eleventyConfig.addCollection("yt", function (collectionApi) {
 		return collectionApi.getAll().filter(function (item) {
-			if(item.template.parsed.dir.startsWith("./content/project")){return item;}
+			if(item.template.parsed.dir.startsWith("./content/yt")){return item;}
 		});
 	});
 	return {

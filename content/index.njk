@@ -23,7 +23,7 @@ numberOfLatestPostsToShow: 3
 		{% endif %}
 			{% if post.data.layout != "layouts/home.njk" %}
 			<li class=" mb-10 list-none">
-				<a style="font-size:1.5em;font-weight:bold;" href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a><br><span style="font-size:regular;font-weight:regular !important;">{% if post.data.tags.length > 1 %}Tagged {{post.data.tags | string | replace("project,", "") | replace(",", ", ")}} - {% endif %}Posted {{post.date | postDate}}</span>
+				<a style="font-size:1.5em;font-weight:bold;" href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a><br><span style="font-size:regular;font-weight:regular !important;">{% if post.data.tags.length > 1 %}Tagged {{post.data.tags | rmFirst }} - {% endif %}Posted {{post.date | postDate}}</span>
 			</li>
 			{% endif %}
 	{% endfor %}
