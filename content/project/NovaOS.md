@@ -1,5 +1,5 @@
 ---
-title: NovaOS (main post)
+title: NovaOS
 description: Everything relating to NovaOS, my web based operating system
 date: 2024-05-15
 tags: [novaOS]
@@ -33,3 +33,6 @@ Instance](https://novathefox.github.io/novaos)
 </div>
 
 _I am in awe of myself, if even 13 year old me (i'm 15 as of writing this) saw this, she'd be in awe tbh_
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTAyMjkzMjQ0XX0=
+-->
