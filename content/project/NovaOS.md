@@ -5,9 +5,7 @@ date: 2024-05-15
 tags: [novaOS]
 ---
 # Related Links
-[Post Feature
-Suggestion](https://go.novafurry.win/novaos.feature.suggest) • [Feature
-Roadmap](https://go.novafurry.win/novaos.feature.plans) • [Git Org](https://go.novafurry.win/novaos.org) • [Main
+[Git Org](https://go.novafurry.win/novaos.org) • [Main
 Instance](https://go.novafurry.win/novaos.instance)
 # NovaOS Miniblog
 <div style="padding-left:10px;">
@@ -39,6 +37,6 @@ I've decided that with my very large plans for the future of NovaOS, to expand i
 
 _I am in awe of myself, if i showed this to myself, even one year ago she'd almost definitely be in awe tbh_
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDU1NjQ0NTksLTEwMTgxMjYwNjksLT
+eyJoaXN0b3J5IjpbLTE5OTc1NzE1MTEsLTEwMTgxMjYwNjksLT
 k1MTg1NTc2MywtMTA2NzAzOTczMF19
 -->
