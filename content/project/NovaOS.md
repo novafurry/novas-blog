@@ -1,7 +1,7 @@
 ---
 title: NovaOS
 description: Everything relating to NovaOS, my web based operating system
-date: 2024-05-15
+date: 2024-05-16
 tags: [novaOS]
 ---
 # Related Links
@@ -37,6 +37,6 @@ I've decided that with my very large plans for the future of NovaOS, to expand i
 
 _I am in awe of myself, if i showed this to myself, even one year ago she'd almost definitely be in awe tbh_
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTc1NzE1MTEsLTEwMTgxMjYwNjksLT
+eyJoaXN0b3J5IjpbLTIwMDI2MjQyMTYsLTEwMTgxMjYwNjksLT
 k1MTg1NTc2MywtMTA2NzAzOTczMF19
 -->
