@@ -5,13 +5,16 @@ date: 2024-05-15
 tags: [novaOS]
 ---
 # Related Links
-[Issues - Desktop Edition](https://go.novafurry.win/novaos.issues) • [Post Feature
+[Post Feature
 Suggestion](https://go.novafurry.win/novaos.feature.suggest) • [Feature
 Roadmap](https://go.novafurry.win/novaos.feature.plans) • [Git Org](https://go.novafurry.win/novaos.org) • [Main
 Instance](https://go.novafurry.win/novaos.instance)
 # NovaOS Miniblog
-## NovaOS Enlarges.
-I've decided that with my very large plans for the future of NovaOS, to expand it to a github org. I did this as NovaOS is getting "Editions"
+<div style="padding-left:10px;">
+    <span style="font-size: 1.5em; font-weight:bold;">Nova OS Enlarges!<small
+            style="font-size:small;font-weight:normal;"> (i like big os'es and i can't lie)</small></span><br>
+I've decided that with my very large plans for the future of NovaOS, to expand it to a github org. I did this as NovaOS is getting "Editions". Find the Org at http://github.com/NovaOS-Hub
+<hr>
 <div style="padding-left:10px;">
     <span style="font-size: 1.5em; font-weight:bold;">Nova OS Update Time! <small
             style="font-size:small;font-weight:normal;">(basically just dotpoints related to anything in
@@ -36,6 +39,6 @@ I've decided that with my very large plans for the future of NovaOS, to expand i
 
 _I am in awe of myself, if i showed this to myself, even one year ago she'd almost definitely be in awe tbh_
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI2MTM1MjUwLC0xMDE4MTI2MDY5LC05NT
-E4NTU3NjMsLTEwNjcwMzk3MzBdfQ==
+eyJoaXN0b3J5IjpbLTExMDU1NjQ0NTksLTEwMTgxMjYwNjksLT
+k1MTg1NTc2MywtMTA2NzAzOTczMF19
 -->
