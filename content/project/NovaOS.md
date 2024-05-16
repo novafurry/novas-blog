@@ -7,7 +7,7 @@ tags: [novaOS]
 # Related Links
 [Issues](https://go.novafurry.win/novaos.issues) • [Post Feature
 Suggestion](https://go.novafurry.win/novaos.feature.suggest) • [Feature
-Roadmap](https://go.novafurry.win/novaos.feature.plans) • [Git Repo](https://go.novafurry.win/novaos.repo) • [Main
+Roadmap](https://go.novafurry.win/novaos.feature.plans) • [Git Org](https://go.novafurry.win/novaos.org) • [Main
 Instance](https://go.novafurry.win/novaos.instance)
 # NovaOS Miniblog
 <div style="padding-left:10px;">
@@ -34,5 +34,6 @@ Instance](https://go.novafurry.win/novaos.instance)
 
 _I am in awe of myself, if i showed this to myself, even one year ago she'd almost definitely be in awe tbh_
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MTg1NTc2MywtMTA2NzAzOTczMF19
+eyJoaXN0b3J5IjpbLTEwMTgxMjYwNjksLTk1MTg1NTc2MywtMT
+A2NzAzOTczMF19
 -->
