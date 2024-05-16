@@ -5,11 +5,13 @@ date: 2024-05-15
 tags: [novaOS]
 ---
 # Related Links
-[Issues](https://go.novafurry.win/novaos.issues) • [Post Feature
+[Issues - Desktop Edition](https://go.novafurry.win/novaos.issues) • [Post Feature
 Suggestion](https://go.novafurry.win/novaos.feature.suggest) • [Feature
 Roadmap](https://go.novafurry.win/novaos.feature.plans) • [Git Org](https://go.novafurry.win/novaos.org) • [Main
 Instance](https://go.novafurry.win/novaos.instance)
 # NovaOS Miniblog
+## NovaOS Enlarges.
+I've decided that with my very large plans for the future of NovaOS, to expand it to a github org. I did this as NovaOS is getting "Editions"
 <div style="padding-left:10px;">
     <span style="font-size: 1.5em; font-weight:bold;">Nova OS Update Time! <small
             style="font-size:small;font-weight:normal;">(basically just dotpoints related to anything in
@@ -34,6 +36,6 @@ Instance](https://go.novafurry.win/novaos.instance)
 
 _I am in awe of myself, if i showed this to myself, even one year ago she'd almost definitely be in awe tbh_
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTgxMjYwNjksLTk1MTg1NTc2MywtMT
-A2NzAzOTczMF19
+eyJoaXN0b3J5IjpbNzI2MTM1MjUwLC0xMDE4MTI2MDY5LC05NT
+E4NTU3NjMsLTEwNjcwMzk3MzBdfQ==
 -->
