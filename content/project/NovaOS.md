@@ -32,7 +32,7 @@ Instance](https://go.novafurry.win/novaos.instance)
     </ul>
 </div>
 
-_I am in awe of myself, if even 13 year old me (i'm 15 as of writing this) saw this, she'd be in awe tbh_
+_I am in awe of myself, if i showed this to myself, even one year ago she'd almost definitely be in awe tbh_
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjcwMzk3MzBdfQ==
+eyJoaXN0b3J5IjpbLTk1MTg1NTc2MywtMTA2NzAzOTczMF19
 -->
