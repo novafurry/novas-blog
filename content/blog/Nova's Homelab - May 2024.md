@@ -4,7 +4,10 @@ description: Nova's Homelab setup as of 17th May 2024
 date: 2024-05-17
 tags: [linux, raspberryPi, homelab]
 ---
-content soon pooks
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkxNjMxMzUwXX0=
--->
+## Hardware
+Home Automation Server: Raspberry Pi 4B + 32GB Micro SD Card
+General Homelab: Acer Swift SF114-32
+## Software
+### Pi 4B: HomeAssistant OS
+#### Addons
+
