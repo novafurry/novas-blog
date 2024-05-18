@@ -20,6 +20,17 @@ layout: layouts/base.njk
 	{{ogDesc | safe}}
 </div>
 {{ content | safe }}
+
+<small>COMMENTS: <u>Blog</u> • <a href="http://youtu.be/{{ videoID }}" target="_blank">Switch to YouTube</a></small>
+<script src="https://utteranc.es/client.js"
+        repo="novafurry/novas-blog"
+        issue-term="pathname"
+        label="Utterances Comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>
+
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
 {%- set nextPost = collections.posts | getNextCollectionItem %}
