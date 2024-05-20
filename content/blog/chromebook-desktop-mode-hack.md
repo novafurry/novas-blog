@@ -4,10 +4,14 @@ description: Trick a Chromebook into entering desktop mode
 date: 2024-05-20
 tags: [chromebook, hack, desktop]
 ---
-So, your ChromeOS tablet won't stay in desktop mode. Luckily, I found a (slightly janky) fix.
+So, your ChromeOS tablet won't stay in desktop mode. Luckily, I found a (slightly janky) fix for when it is in a solitary position.
 ## THE FIX
 1. Find an old wireless (or wired) mouse you no-longer use and are okay with hacking apart. 
-2. Open the case
+2. Open the case (or just cover the light externally)
+3. Once opened, find the light/laser and cut it off
+4. Close the mouse back up (or don't)
+5. Hide/place it somewhere nearby.
+Et Voilà
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NDA3MzMzMl19
+eyJoaXN0b3J5IjpbODQ3MDE1ODk1XX0=
 -->
