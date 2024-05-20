@@ -11,7 +11,9 @@ So, your ChromeOS tablet won't stay in desktop mode. Luckily, I found a (slightl
 3. Once opened, find the light/laser and cut it off
 4. Close the mouse back up (or don't)
 5. Hide/place it somewhere nearby.
-Et Voilà
+Et Voilà!
+Your Chromebook is in Desktop mode
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3MDE1ODk1XX0=
+eyJoaXN0b3J5IjpbMTA3MzAzNjMxNl19
 -->
