@@ -4,6 +4,9 @@ description: Links to places to learn computer science and programming for free.
 date: 2024-05-21
 tags: [courses, free, links, learn]
 ---
+## Table of Contents
+Courses:
+
 ## Courses
 ### Harvard CS50 2023
 <small> CS50 2024 is not out as of writing this </small>
@@ -32,7 +35,7 @@ Languages/Topics covered: AI, APIs, Bugs in large software/programming news
 Languages/Topics covered: Algorithms, Python
 #### [https://www.youtube.com/@b001](https://www.youtube.com/@b001)
 
-
+Want to suggest something? Hit me up at [nova@novafurry.win](mailto:nova@novafurry.win)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NjUzMjQ1NSwxNDU0Nzk3MDMxXX0=
+eyJoaXN0b3J5IjpbLTMwNjIxMDQ3NCwxNDU0Nzk3MDMxXX0=
 -->
