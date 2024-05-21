@@ -11,11 +11,11 @@ tags: [courses, free, links, learn]
             <li class="sub-item"><a href="#harvard-cs50-2023">Harvard CS50 2023</a></li>
         </ul>
     </li>
-    <li><a href="#content Creators">Content Creators</a></li>
+    <li><a href="#content-creators">Content Creators</a></li>
         <ul>
-            <li class="sub-item"><a href="#harvard-cs50-2023">Harvard CS50 2023</a></li>
-            <li class="sub-item"><a href="#harvard-cs50-2023">Harvard CS50 2023</a></li>
-            <li class="sub-item"><a href="#harvard-cs50-2023">Harvard CS50 2023</a></li>
+            <li class="sub-item"><a href="#conaticus">Conaticus</a></li>
+            <li class="sub-item"><a href="#code-with-lewis">Code With Lewis</a></li>
+            <li class="sub-item"><a href="#b00l">b00l</a></li>
         </ul>
     </li>
 </ul>
@@ -49,6 +49,6 @@ Languages/Topics covered: Algorithms, Python
 
 Want to suggest something? Hit me up at [nova@novafurry.win](mailto:nova@novafurry.win)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MDY0MjM5MywxMTQxMDU0MTA0LDE0NT
-Q3OTcwMzFdfQ==
+eyJoaXN0b3J5IjpbMjExNzYzNzM0LDExNDEwNTQxMDQsMTQ1ND
+c5NzAzMV19
 -->
