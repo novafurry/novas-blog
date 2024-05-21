@@ -25,7 +25,12 @@ Free, online, self-paced computer science course from Harvard.
 ### Conaticus
 Languages/Topics covered: Algorithms, JavaScript, Rust, Go, C++, AI, and more
 #### [Link - https://www.youtube.com/@conaticus](https://www.youtube.com/@conaticus)
-
+### Code With Lewis
+Languages/Topics covered: AI, APIs
+#### [Link - https://www.youtube.com/c/CodingwithLewis](https://www.youtube.com/c/CodingwithLewis)
+### b00l
+Languages/Topics covered: Algorithms, JavaScript, Rust, Go, C++, AI, and more
+#### [https://www.youtube.com/@b001](https://www.youtube.com/@b001)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjk2MTIwNTEsMTQ1NDc5NzAzMV19
+eyJoaXN0b3J5IjpbMjE1NzQxMTgyLDE0NTQ3OTcwMzFdfQ==
 -->
