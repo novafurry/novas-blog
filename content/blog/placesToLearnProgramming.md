@@ -22,7 +22,10 @@ Free, online, self-paced computer science course from Harvard.
 -   [Week 10](https://cs50.harvard.edu/x/2023/weeks/10/)  Emoji
 #### [Link - https://cs50.harvard.edu/x/2023/](https://cs50.harvard.edu/x/2023/)
 ## Content Creators
+### Conaticus
+Languages/Topics covered: Algorithms, JavaScript, Rust, Go, C++, AI, and more
+#### [Link - https://www.youtube.com/@conaticus](https://www.youtube.com/@conaticus)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NDc5NzAzMV19
+eyJoaXN0b3J5IjpbLTE4Mjk2MTIwNTEsMTQ1NDc5NzAzMV19
 -->
