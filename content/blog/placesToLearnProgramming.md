@@ -5,8 +5,25 @@ date: 2024-05-21
 tags: [courses, free, links, learn]
 ---
 ## Table of Contents
-[Courses:](#courses)
-	[Harvard CS50](#harvard-cs50-2023)
+<ul  class="novatoc">
+
+<li><a  href="#section1">Section 1</a></li>
+
+<li><a  href="#section2">Section 2</a>
+
+<ul>
+
+<li  class="sub-item"><a  href="#subsection1">Subsection 1</a></li>
+
+<li  class="sub-item"><a  href="#subsection2">Subsection 2</a></li>
+
+</ul>
+
+</li>
+
+<li><a  href="#section3">Section 3</a></li>
+
+</ul>
 ## Courses
 ### Harvard CS50 2023
 <small> CS50 2024 is not out as of writing this </small>
@@ -37,5 +54,6 @@ Languages/Topics covered: Algorithms, Python
 
 Want to suggest something? Hit me up at [nova@novafurry.win](mailto:nova@novafurry.win)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MTA1NDEwNCwxNDU0Nzk3MDMxXX0=
+eyJoaXN0b3J5IjpbMTc0OTI4MjMwMSwxMTQxMDU0MTA0LDE0NT
+Q3OTcwMzFdfQ==
 -->
