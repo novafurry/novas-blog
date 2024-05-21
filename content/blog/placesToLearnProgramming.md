@@ -1,12 +1,12 @@
 ---
-name: Nova's List Of Sites/Creators/Etc That Teach Programming and Computer Science
+title: Nova's List Of Sites/Creators/Etc That Teach Programming and Computer Science
 description: Links to places to learn computer science and programming for free.
 date: 2024-05-21
 tags: [courses, free, links, learn]
 ---
 ## Table of Contents
-[Courses:](#Courses)
-	[Harvard CS50](#Harvard%20CS50%202023)
+[Courses:](#courses)
+	[Harvard CS50](#harvard-cs50-2023)
 ## Courses
 ### Harvard CS50 2023
 <small> CS50 2024 is not out as of writing this </small>
@@ -37,5 +37,5 @@ Languages/Topics covered: Algorithms, Python
 
 Want to suggest something? Hit me up at [nova@novafurry.win](mailto:nova@novafurry.win)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNDA3NDE5NSwxNDU0Nzk3MDMxXX0=
+eyJoaXN0b3J5IjpbMTE0MTA1NDEwNCwxNDU0Nzk3MDMxXX0=
 -->
