@@ -274,3 +274,16 @@ ul.nav {
 ul.nav *, ul.nav{
     text-align:center;
 }
+        .novatoc .sub-item {
+            margin-left: 20px;
+        }
+        /* Add a right angle symbol for sub-items */
+        .novatoc .sub-item::marker {
+            content: "\2514"; /* Unicode for right-pointing triangle */
+        }
+        .novatoc .sub-item{
+            margin-left: -23px;
+        }
+        .novatoc .sub-item a{
+            margin-left: 5px;
+        }
