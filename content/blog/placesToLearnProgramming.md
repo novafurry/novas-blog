@@ -19,6 +19,7 @@ tags: [courses, free, links, learn]
         </ul>
     </li>
 </ul>
+
 ## Courses
 ### Harvard CS50 2023
 <small> CS50 2024 is not out as of writing this </small>
@@ -49,6 +50,6 @@ Languages/Topics covered: Algorithms, Python
 
 Want to suggest something? Hit me up at [nova@novafurry.win](mailto:nova@novafurry.win)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNzYzNzM0LDExNDEwNTQxMDQsMTQ1ND
-c5NzAzMV19
+eyJoaXN0b3J5IjpbNDM0NjY2ODIwLDIxMTc2MzczNCwxMTQxMD
+U0MTA0LDE0NTQ3OTcwMzFdfQ==
 -->
