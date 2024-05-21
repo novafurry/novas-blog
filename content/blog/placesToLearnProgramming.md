@@ -5,10 +5,24 @@ date: 2024-05-21
 tags: [courses, free, links, learn]
 ---
 ## Courses
-### Harvard CS50
+### Harvard CS50 2023
+<small> CS50 2024 is not out as of writing this </small>
 Free, online, self-paced computer science course from Harvard.
 #### Content:
+-   [Week 0](https://cs50.harvard.edu/x/2023/weeks/0/)  Scratch
+-   [Week 1](https://cs50.harvard.edu/x/2023/weeks/1/)  C
+-   [Week 2](https://cs50.harvard.edu/x/2023/weeks/2/)  Arrays
+-   [Week 3](https://cs50.harvard.edu/x/2023/weeks/3/)  Algorithms
+-   [Week 4](https://cs50.harvard.edu/x/2023/weeks/4/)  Memory
+-   [Week 5](https://cs50.harvard.edu/x/2023/weeks/5/)  Data Structures
+-   [Week 6](https://cs50.harvard.edu/x/2023/weeks/6/)  Python
+-   [Week 7](https://cs50.harvard.edu/x/2023/weeks/7/)  SQL
+-   [Week 8](https://cs50.harvard.edu/x/2023/weeks/8/)  HTML, CSS, JavaScript
+-   [Week 9](https://cs50.harvard.edu/x/2023/weeks/9/)  Flask
+-   [Week 10](https://cs50.harvard.edu/x/2023/weeks/10/)  Emoji
+#### [Link - https://cs50.harvard.edu/x/2023/](https://cs50.harvard.edu/x/2023/)
+## Content Creators
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NjIyNzA5M119
+eyJoaXN0b3J5IjpbMTQ1NDc5NzAzMV19
 -->
