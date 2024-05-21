@@ -48,8 +48,8 @@ Languages/Topics covered: AI, APIs, Bugs in large software/programming news
 Languages/Topics covered: Algorithms, Python
 #### [https://www.youtube.com/@b001](https://www.youtube.com/@b001)
 
-Want to suggest something? Hit me up at [nova@novafurry.win](mailto:nova@novafurry.win)
+Want to suggest something? Hit me up at [nova@novafurry.win](mailto:nova@novafurry.win) - Or in the comments section below
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM0NjY2ODIwLDIxMTc2MzczNCwxMTQxMD
-U0MTA0LDE0NTQ3OTcwMzFdfQ==
+eyJoaXN0b3J5IjpbMTIzNTQzMTMwMiwyMTE3NjM3MzQsMTE0MT
+A1NDEwNCwxNDU0Nzk3MDMxXX0=
 -->
