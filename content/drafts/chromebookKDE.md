@@ -1,6 +1,8 @@
 # KDE on a Chromebook with native touch support and wayland
 1. Setup and enable the Linux Crostini Container
-2. Set your username and storage size, these can be whatever you want. (you can share thru google drive 
+2. Set your username and storage size, these can be whatever you want. (you can share thru google drive, usbs, and the my files folder later)
+3. Install KDE + the Mallit Onscreen Keyboard
+4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NDIwNDY3OF19
+eyJoaXN0b3J5IjpbMTQ2NTAzMzQ0XX0=
 -->
