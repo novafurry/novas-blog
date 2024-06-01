@@ -9,8 +9,8 @@
 8. Enter fullscreen by dragging down from the top middle and pressing full
 9. Open KDE Settings and set animation speed to instant
 10. scroll down to input devices, navigate to virtual keyboard settings inside of input and pick Maliit.
-11. These next parts are easier to explain in a video lol, watch this clip.
+11.Now fee
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjY1NzAxMjIsLTc4Mzk0OTY3MSwtMT
-Q3MTM0NzczMV19
+eyJoaXN0b3J5IjpbMTk5MTY5MDc2NiwtMTYyNjU3MDEyMiwtNz
+gzOTQ5NjcxLC0xNDcxMzQ3NzMxXX0=
 -->
