@@ -4,13 +4,13 @@
 3. Install KDE, the Konsole terminal, nano text editor and the Maliit Onscreen Keyboard (this **WILL** take a while)
 	Run: `sudo apt-get install plasma-workspace-wayland maliit-keyboard nano konsole -y`
 4. (heads up: this needs a keyboard! this is not required) For easy access to KDE,  run `nano ~/.bashrc` in the terminal., use the FN+Down arrow keys to scroll to the bottom and add the line `alias k='startplasma-wayland'` then hit Ctrl+X, then Y then enter, now all you need to enter to start KDE is `k`
-5. Run `sudo passwd`
-6. Once completed, run `startplasma-wayland` in the terminal 
-7. Enter fullscreen by dragging down from the top middle and pressing full
-8. Open KDE Settings and set animation speed to instant
-9. scroll down to input devices, navigate to virtual keyboard settings inside of input and pick Maliit.
-10. Once in KDE, long press (or right click> enter edit mode) the desktop and press the new icon in the bottom right hand corner of the task bar,
+5. Run `sudo passwd` and set a password of your choice
+7. Once completed, run `startplasma-wayland` in the terminal 
+8. Enter fullscreen by dragging down from the top middle and pressing full
+9. Open KDE Settings and set animation speed to instant
+10. scroll down to input devices, navigate to virtual keyboard settings inside of input and pick Maliit.
+11. These next parts are easier to explain in a video lol, watch this clip.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NzI0MTQ0LC03ODM5NDk2NzEsLTE0Nz
-EzNDc3MzFdfQ==
+eyJoaXN0b3J5IjpbLTE2MjY1NzAxMjIsLTc4Mzk0OTY3MSwtMT
+Q3MTM0NzczMV19
 -->
