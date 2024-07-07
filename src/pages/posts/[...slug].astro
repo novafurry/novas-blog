@@ -101,7 +101,22 @@ const jsonLd = {
             <Markdown class="mb-6 markdown-content onload-animation">
                 <Content />
             </Markdown>
-
+            <script src="https://giscus.app/client.js"
+                    data-repo="novafurry/novas-blog"
+                    data-repo-id="R_kgDOL7o32Q"
+                    data-category="post comments"
+                    data-category-id="DIC_kwDOL7o32c4Cgnpw"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="top"
+                    data-theme="noborder_gray"
+                    data-lang="en"
+                    data-loading="lazy"
+                    crossorigin="anonymous"
+                    async>
+            </script>
             {licenseConfig.enable && <License title={entry.data.title} slug={entry.slug} pubDate={entry.data.published} class="mb-6 rounded-xl license-container onload-animation"></License>}
 
         </div>
