@@ -1,7 +1,7 @@
 ---
 title: The CrowdStrike Bootloop Incident
 description: I cover the CrowdStrike Incident
-published: 2024-7-20
+published: 2024-07-20
 tags: [cybersec,crowdstrike,windows,bug,fail]
 ---
 ## Will this affect me?
