@@ -15,6 +15,7 @@ CrowdStrike's KLD “Falkon” protects:
 >- 298 fortune 500 companies
 >- 538 fortune 1000 companies
 >- 43 US States
+>
 >Source: [https://www.crowdstrike.com/platform/](https://www.crowdstrike.com/platform/)
 
 Matter of fact, people in the US state of Alaska, Ohio and others were unable to call 911 as their systems ran Windows, and had CrowdStrike's KLD “Falkon” installed.
