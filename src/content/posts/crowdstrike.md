@@ -1,5 +1,9 @@
-
-# The CrowdStrike Bootloop Incident
+---
+title: The CrowdStrike Bootloop Incident
+description: I cover the CrowdStrike Incident
+published: 2024-7-20
+tags: [cybersec,crowdstrike,windows,bug,fail]
+---
 ## Will this affect me?
 Most people won't be affected by this on personal machines, however your work windows machines maybe.
 It won't affect people using Mac or Linux.
