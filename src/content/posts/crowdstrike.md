@@ -38,13 +38,76 @@ ABC Australia continued to broadcast, however without teleprompters or on-screen
 
 ## YouTube coverage from reputable content creators:
 
--   [https://youtu.be/sL-apm0dCSs?si=t1kUFsGStoIxYhGZ](https://youtu.be/sL-apm0dCSs?si=t1kUFsGStoIxYhGZ)
--   [https://youtu.be/pCxvyIx922A?si=iQhWFN8L8xAqTww0](https://youtu.be/pCxvyIx922A?si=iQhWFN8L8xAqTww0)
--   [https://youtu.be/4yDm6xNeYas?si=VT6fJKcM0MKsf38S](https://youtu.be/4yDm6xNeYas?si=VT6fJKcM0MKsf38S)
--   [https://youtu.be/yyC0Y70RGhU?si=xsMcYaFNB5whyJRO](https://youtu.be/yyC0Y70RGhU?si=xsMcYaFNB5whyJRO)
--   [https://youtu.be/yVXsc2tmJNk?si=18puTKnRmnMgDyaU](https://youtu.be/yVXsc2tmJNk?si=18puTKnRmnMgDyaU)
--   [https://youtu.be/3N4m5k9GAW0?si=agjrBk7144XpveOi](https://youtu.be/3N4m5k9GAW0?si=agjrBk7144XpveOi)
--   [https://youtu.be/deJuXfwS7Bo?si=oCKbbYpVs5fAZo2T](https://youtu.be/deJuXfwS7Bo?si=oCKbbYpVs5fAZo2T) 
+
+<div style='max-width: 200px;display:inline-block;text-align:center;'>
+<a href='https://youtu.be/sL-apm0dCSs'>
+<img width='200' src='http://i.ytimg.com/vi/sL-apm0dCSs/maxresdefault.jpg'/>
+<br><b>The CrowdStrike Problem Isn’t A Simple Fix…</b><br>
+<i>
+Theo - t3․gg
+</i>
+</a>
+</div>
+
+<div style='max-width: 200px;display:inline-block;text-align:center;'>
+<a href='https://youtu.be/pCxvyIx922A'>
+<img width='200' src='http://i.ytimg.com/vi/pCxvyIx922A/maxresdefault.jpg'/>
+<br><b>lol crowdstrike just destroyed the internet</b><br>
+<i>
+Low Level Learning
+</i>
+</a>
+</div>
+
+<div style='max-width: 200px;display:inline-block;text-align:center;'>
+<a href='https://youtu.be/4yDm6xNeYas'>
+<img width='200' src='http://i.ytimg.com/vi/4yDm6xNeYas/maxresdefault.jpg'/>
+<br><b>Some bad code just broke a billion Windows machines</b><br>
+<i>
+Fireship
+</i>
+</a>
+</div>
+
+<div style='max-width: 200px;display:inline-block;text-align:center;'>
+<a href='https://youtu.be/yyC0Y70RGhU'>
+<img width='200' src='http://i.ytimg.com/vi/yyC0Y70RGhU/maxresdefault.jpg'/>
+<br><b>The World's Largest Computer Crash Just Happened...</b><br>
+<i>
+SomeOrdinaryGamers
+</i>
+</a>
+</div>
+
+<div style='max-width: 200px;display:inline-block;text-align:center;'>
+<a href='https://youtu.be/yVXsc2tmJNk'>
+<img width='200' src='http://i.ytimg.com/vi/yVXsc2tmJNk/maxresdefault.jpg'/>
+<br><b>The day Windows actually died…</b><br>
+<i>
+Enderman
+</i>
+</a>
+</div>
+
+<div style='max-width: 200px;display:inline-block;text-align:center;'>
+<a href='https://youtu.be/3N4m5k9GAW0'>
+<img width='200' src='http://i.ytimg.com/vi/3N4m5k9GAW0/maxresdefault.jpg'/>
+<br><b>CrowdStrike Destroyed The Internet</b><br>
+<i>
+ThePrimeagen
+</i>
+</a>
+</div>
+
+<div style='max-width: 200px;display:inline-block;text-align:center;'>
+<a href='https://youtu.be/deJuXfwS7Bo'>
+<img width='200' src='http://i.ytimg.com/vi/deJuXfwS7Bo/maxresdefault.jpg'/>
+<br><b>The Internet Broke Today: Explained!</b><br>
+<i>
+Seytonic
+</i>
+</a>
+</div>
 
 ## Sources
 -   [https://alaskapublic.org/2024/07/19/widespread-technology-outage-disrupts-alaska-911-service-global-flights-and-banking/](https://alaskapublic.org/2024/07/19/widespread-technology-outage-disrupts-alaska-911-service-global-flights-and-banking/)
