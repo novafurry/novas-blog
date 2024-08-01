@@ -1,11 +1,11 @@
 module.exports = {
-	title: "Nova's Blog",
-	url: "https://novafurry.win/",
+	title: "Eleventy Base Blog v8",
+	url: "https://example.com/",
 	language: "en",
-	description: "Hi, i'm NovaFurry (or Nova The Furry whatever) and this is my blog",
+	description: "I am writing about my experiences as a naval navel-gazer.",
 	author: {
-		name: "Nova",
-		email: "nova@novafurry.win",
-		url: "https://novafurry.win/about-me/"
+		name: "Your Name Here",
+		email: "youremailaddress@example.com",
+		url: "https://example.com/about-me/"
 	}
 }

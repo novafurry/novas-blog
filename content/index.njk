@@ -1,55 +1,135 @@
----
-layout: layouts/home.njk
-eleventyNavigation:
-  key: Home
-  order: 1
-numberOfLatestPostsToShow: 3
----
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest Posts</h1>
-
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
-<ol reversed>
-	{% set currentYear = "" %}
-	{% for post in postslist | reverse %}
-		{% if showYear %}
-			{% set postYear = post.date.getFullYear() %}
-			{% if currentYear != postYear %}
-			{% set currentYear = postYear %}
-			<h3>{{ postYear }}</h3>
-			{% endif %}
-		{% endif %}
-			{% if post.data.layout != "layouts/home.njk" %}
-			<li class=" mb-10 list-none">
-				<a style="font-size:1.5em;font-weight:bold;" href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a><br><span style="font-size:regular;font-weight:regular !important;">{% if post.data.tags.length > 1 %}Tagged {{post.data.tags | rmFirst }} - {% endif %}Posted {{post.date | postDate}}</span>
-			</li>
-			{% endif %}
-	{% endfor %}
-</ol>
-
-{% set postsCount = collections.project | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest Projects</h1>
-
-{% set postslist = collections.project | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
-<ol reversed>
-	{% set currentYear = "" %}
-	{% for post in postslist | reverse %}
-		{% if showYear %}
-			{% set postYear = post.date.getFullYear() %}
-			{% if currentYear != postYear %}
-			{% set currentYear = postYear %}
-			<h3>{{ postYear }}</h3>
-			{% endif %}
-		{% endif %}
-			{% if post.data.layout != "layouts/home.njk" %}
-			<li class=" mb-10 list-none">
-				<a style="font-size:1.5em;font-weight:bold;" href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a><br><span style="font-size:regular;font-weight:regular !important;">{% if post.data.tags.length > 1 %}Tagged {{post.data.tags | string | replace("project,", "") | replace(",", ", ")}} - {% endif %}Posted {{post.date | postDate}}</span>
-			</li>
-			{% endif %}
-	{% endfor %}
-</ol>
-<a rel="me" hidden href="https://bark.lgbt/@nova">Mastodon</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title>nova's site</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="animate__animated animate__zoomInRight">
+      <div class="navInnerFill">
+        <span class="nav-title"> Nova's Site </span>
+        <ul class="nav-links">
+          <li
+            class="nav-link active"
+            location="/">
+            Home
+          </li>
+          <li
+            class="nav-link"
+            location="./blog/">
+            Blog
+          </li>
+          <li class="nav-link">About</li>
+        </ul>
+      </div>
+    </nav>
+    <topGradient></topGradient>
+    <main>
+      <section class="card-container">
+        <div class="card mainc animate__animated animate__zoomInLeft">
+          <div style="float: left; width: 80%">
+            <h1>Hey!</h1>
+            I’m Nova. I’m a frontend dev who enjoys pushing the modern web to
+            the limit.<br /><br />
+            <div class="pill" location="https://github.com/novafurry">gitHub</div>
+            <div class="pill" location="https://youtube.com/@novafurry">youTube</div>
+            <div class="pill" onclick="more()">more ></div>
+          </div>
+          <img
+            style="width: 20%; float: right"
+            src="faux.png"
+            alt=""
+          />
+        </div>
+        <div class="card expCard  animate__animated animate__zoomInRight">
+          <h2>My Experience</h2>
+          <span class="transpill"
+            ><img height="14pt" src="productLogos/git.svg" alt="" /> Git</span
+          >,
+          <span class="transpill"
+            ><img height="14pt" src="productLogos/jq.svg" alt="" /> jQuery</span
+          >,
+          <span class="transpill"
+            ><img height="14pt" src="productLogos/linux.svg" alt="" />
+            Linux</span
+          >,
+          <span class="transpill"
+            ><img height="14pt" src="productLogos/vb.svg" alt="" /> Visual
+            Basic</span
+          >,
+          <span class="transpill"
+            ><img height="14pt" src="productLogos/figma.svg" alt="" />
+            Figma,</span
+          >
+          <span class="transpill"
+            ><img height="14pt" src="productLogos/js.svg" alt="" />
+            JavaScript</span
+          >
+        </div>
+        <div class="card animate__animated animate__zoomInUp">
+          <h2>Current Projects</h2>
+          <ul style="padding-left: 25px">
+            <li>novaOS, a web based operating “ecosystem”</li>
+            <li>AppDash, a tiling dashboard for web apps</li>
+          </ul>
+        </div>
+        <div class="card social animate__animated animate__zoomInDown">
+          <h2>Socials</h2>
+          <div class="social-container">
+            <a href="https://fursona.directory/@nova" title="FursonaDirectory, basically linktree">
+              <i class="fa-solid fa-paw"></i>
+            </a>  
+            <a
+              href="https://youtube.com/@novafurry"
+              
+              title="YouTube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href="https://github.com/novafurry"
+              
+              title="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://twitter.com/@_novafurry"
+              
+              title="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://bark.lgbt/@nova"  title="Mastodon">
+              <i class="fab fa-mastodon"></i>
+            </a>
+            <a
+              href="https://tiktok.com/@nova.furry"
+              
+              title="TikTok"
+            >
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="blob"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
