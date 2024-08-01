@@ -1,9 +1,9 @@
-{%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %}
-<ol reversed class="postlist">
+<div class="card nobg">
 {% for post in postslist | reverse %}
-	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-		<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
-	</li>
+	<div location="{{ post.url }}" class="card animate__animated animate__zoomInRight bpost">
+		<h2>{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</h2>
+		<small><i>{{ post.date | readableDate("LLLL yyyy") }} &middot; 2 Minutes &middot; Category Example</i></small>
+	</div>
+	<br>
 {% endfor %}
-</ol>
+</div>

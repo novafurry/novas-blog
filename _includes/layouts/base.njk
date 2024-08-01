@@ -39,27 +39,26 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
 		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
 			rel="stylesheet"
-		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	</head>
 	<body>
 		<nav class="animate__animated animate__zoomInRight">
 			<div class="navInnerFill">
 				<span class="nav-title"> Nova's Site </span>
 				<ul class="nav-links">
-					<li class="nav-link active" location="/">Home</li>
-					<li class="nav-link" location="./blog/">Blog</li>
-					<li class="nav-link">About</li>
+					<li class="nav-link" id="home" location="/">Home</li>
+					<li class="nav-link" id="blog" location="/blog/">Blog</li>
+					<li class="nav-link" id="about" location="/about/">About</li>
 				</ul>
 			</div>
 		</nav>
 		<topGradient></topGradient>
-		<main>{{content}}</main>
+		<main>{{ content | safe }}</main>
 		<div class="blob"></div>
-		<script src="script.js"></script>
+		<script src="/script.js"></script>
 		<!-- This page `{{ page.url | htmlBaseUrl }}` was built on {% currentBuildDate %} -->
 	</body>
 </html>
