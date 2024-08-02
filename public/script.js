@@ -9,15 +9,15 @@ function getRandomIntBetween(min, max) {
 
 var navigato = false;
 var deviceIsTouch = true;
-setInterval(function () {
-  if (deviceIsTouch) {
-    if (!navigato) {
-      cursor.style.transform = `translate3d(calc(${
-        Math.min(x + getRandomIntBetween(-350,350), window.innerWidth)
-      }px - 50% ), calc(${Math.min(y + getRandomIntBetween(-350,350), window.innerHeight)}px - 50%), 0)`;
-    }
-  }
-}, 100);
+// setInterval(function () {
+//   if (deviceIsTouch) {
+//     if (!navigato) {
+//       cursor.style.transform = `translate3d(calc(${
+//         Math.min(x + getRandomIntBetween(-350,350), window.innerWidth)
+//       }px - 50% ), calc(${Math.min(y + getRandomIntBetween(-350,350), window.innerHeight)}px - 50%), 0)`;
+//     }
+//   }
+// }, 100);
 
 var cursor = document.querySelector(".blob");
 var x = 0;
@@ -25,8 +25,8 @@ var y = 0;
 document.addEventListener("mousemove", function (e) {
   x = e.clientX + getRandomInt(10);
   y = e.clientY + getRandomInt(10);
-  window.localStorage.x = x;
-  window.localStorage.y = y;
+  // window.localStorage.x = x;
+  // window.localStorage.y = y;
   if (!navigato) {
     cursor.style.transform = `translate3d(calc(${x}px - 50%), calc(${y}px - 50%), 0)`;
   }
@@ -60,7 +60,7 @@ window.onbeforeunload = function () {
   document.querySelectorAll(".card, nav, a").forEach(function (el) {
     // el.classList.add("animate__animated");
     el.className = el.className.replace("zoomIn", "zoomOut");
-    cursor.style.transform = `translate3d(calc(50%), calc(50%), 0)`;
+    // cursor.style.transform = `translate3d(calc(50%), calc(50%), 0)`;
   });
 };
 document
@@ -110,5 +110,5 @@ function more() {
     } else {
       flashes = 0;
     }
-  }, 200);
+  }, 300);
 }

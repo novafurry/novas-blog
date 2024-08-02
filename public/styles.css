@@ -31,8 +31,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 650px;
-    height: 650px;
+    width: 50vw;
+    height: 50vw;
     color: #fff;
     border-radius: 100%;
     background-image: linear-gradient(#1100ff 10%, #ff00f2);
@@ -66,19 +66,7 @@ h1 {
     margin-right:15vw;
 
 }
-html[blog] .card-container {
-  display: grid;
-  grid-template-columns: 1.1fr 2.9fr;
-  grid-template-rows: 1fr min-content;
-  gap: 1rem;
-  padding: 1rem;
-  width: calc(70vw - 28px);
-  margin-left:calc(15vw + 5px);
-  margin-right:15vw;
-  grid-template-areas:
-  "panel posts"
-  "panel posts"
-}
+
 
 html, body{
   overflow: hidden;
@@ -102,22 +90,7 @@ spaceBelow {
   min-height:40px !important;
   grid-area: spacebottom;
 }
-html[blog] .panel{
-  grid-area: panel;
-  display: none;
-}
-html[blog] main{
-  overflow-y: hidden;
-}
-html[blog] main, html[blog] .card-container{
-  padding-bottom:20px;
-  max-height: calc(100vh - 40px);
-}
-html[blog] .card-container > div:not(.panel){
-  grid-area: posts;
-  overflow-y: auto;
-  max-height: calc(100vh - 80px);
-}
+
 .card.nobg{
   background-color: transparent;
   backdrop-filter: none;
@@ -130,7 +103,8 @@ html[blog] .card-container > div:not(.panel){
     }
 }
 @media (max-width: 700px){
-  html[blog] main section.card-container{
+  
+  body:has(page#blog, page#post)main section.card-container{
     grid-template-areas:
     "posts" 
     "panel" !important;
@@ -153,9 +127,7 @@ html[blog] .card-container > div:not(.panel){
     height: fit-content !important;
     /* min-height: 150px; */
   }
-  html[blog] main, html[blog] .card-container{
-    max-height: calc(100vh);
-  }
+
 }
 
 .card {
@@ -264,32 +236,6 @@ nav::before {
     padding-right:14px;
     border-radius:126px;
   }
-  .nav-link.active, body:has(page#blog) .nav-link#blog, body:has(page#home) .nav-link#home{
-    background:rgba(153, 153, 153, 0.9);
-    color: #111111;
-  }
-  .nav-link:not(.active){
-    background: rgba(51, 51, 51,0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  .nav-link:not(.active):hover{
-    background: rgba(81, 81, 81, 0.3);
-    box-shadow: 0px 4px 4px rgba(25, 25, 25, 0.50);
-  }
-  .nav-link.active:hover{
-    background:rgba(120, 120, 120, 0.3);
-    color:#999999;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    outline: 3px solid rgba(153, 153, 153, 0.9);
-
-  }
-  .nav-links:has(.nav-link:not(.active):hover) > .nav-link.active:not(:hover){
-    background-color: rgba(86, 86, 86,0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color:#999999;
-    outline: 2.5px solid rgba(153, 153, 153, 0.9);
-    /* box-sizing: border-box; */
-  }
 
   .pill{
     display:inline-block;
@@ -343,4 +289,177 @@ nav::before {
 }
 .expCard .transpill img{
     height: 20pt;
+}
+body:has(page#blog){
+  .card-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr min-content;
+    gap: 1rem;
+    padding: 1rem;
+    width: calc(70vw - 28px);
+    margin-left:calc(15vw + 5px);
+    margin-right:15vw;
+    grid-template-areas:
+    "panel posts"
+    "panel posts"
+  }
+  .nav-link#blog{
+    background:rgba(153, 153, 153, 0.9);
+    color: #111111;
+  }
+  .nav-link:not(#blog){
+    background: rgba(51, 51, 51,0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .nav-link:not(#blog):hover{
+    background: rgba(81, 81, 81, 0.3);
+    box-shadow: 0px 4px 4px rgba(25, 25, 25, 0.50);
+  }
+  .nav-link#blog:hover{
+    background:rgba(120, 120, 120, 0.3);
+    color:#999999;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: 3px solid rgba(153, 153, 153, 0.9);
+
+  }
+  .nav-links:has(.nav-link:not(#blog):hover) > .nav-link#blog:not(:hover){
+    background-color: rgba(86, 86, 86,0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color:#999999;
+    outline: 2.5px solid rgba(153, 153, 153, 0.9);
+    /* box-sizing: border-box; */
+  }
+}
+body:has(page#home){
+  .nav-link#home{
+    background:rgba(153, 153, 153, 0.9);
+    color: #111111;
+  }
+  .nav-link:not(#home){
+    background: rgba(51, 51, 51,0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .nav-link:not(#home):hover{
+    background: rgba(81, 81, 81, 0.3);
+    box-shadow: 0px 4px 4px rgba(25, 25, 25, 0.50);
+  }
+  .nav-link#home:hover{
+    background:rgba(120, 120, 120, 0.3);
+    color:#999999;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: 3px solid rgba(153, 153, 153, 0.9);
+  
+  }
+  .nav-links:has(.nav-link:not(#home):hover) > .nav-link#home:not(:hover){
+    background-color: rgba(86, 86, 86,0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color:#999999;
+    outline: 2.5px solid rgba(153, 153, 153, 0.9);
+    /* box-sizing: border-box; */
+  }
+}
+body:has(page#post:not(page.about)){
+  .nav-link#blog{
+    background:rgba(153, 153, 153, 0.9);
+    color: #111111;
+  }
+  .nav-link:not(#blog){
+    background: rgba(51, 51, 51,0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .nav-link:not(#blog):hover{
+    background: rgba(81, 81, 81, 0.3);
+    box-shadow: 0px 4px 4px rgba(25, 25, 25, 0.50);
+  }
+  .nav-link#blog:hover{
+    background:rgba(120, 120, 120, 0.3);
+    color:#999999;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: 3px solid rgba(153, 153, 153, 0.9);
+
+  }
+  .nav-links:has(.nav-link:not(#blog):hover) > .nav-link#blog:not(:hover){
+    background-color: rgba(86, 86, 86,0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color:#999999;
+    outline: 2.5px solid rgba(153, 153, 153, 0.9);
+    /* box-sizing: border-box; */
+  }
+}
+body:has(page#post){
+  .card-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr min-content;
+    gap: 1rem;
+    padding: 1rem;
+    width: calc(70vw - 28px);
+    margin-left:calc(15vw + 5px);
+    margin-right:15vw;
+    grid-template-areas:
+    "panel post"
+    "panel post"
+  }
+  .nobg{
+    grid-area: post !important;
+  }
+}
+*:has(page#blog), *:has(page#post){
+  main{
+    overflow-y: hidden;
+  }
+  main, .card-container{
+    padding-bottom:40px;
+    max-height: calc(100vh - 80px);
+  }
+  .card-container > *{
+    margin-bottom:40px;
+  }
+  .card-container > div:not(.panel, .slimpanel){
+    grid-area: posts;
+    overflow-y: auto;
+    max-height: calc(100vh - 90px);
+  }
+  .slimpanel{
+    grid-area: panel;
+    
+  }
+}
+footer{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color:#FFF;
+}
+a, a:visited{
+  color: white !important;
+}
+*:has(page.about){
+  .nav-link#about{
+    background:rgba(153, 153, 153, 0.9);
+    color: #111111;
+  }
+  .nav-link:not(#about){
+    background: rgba(51, 51, 51,0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .nav-link:not(#about):hover{
+    background: rgba(81, 81, 81, 0.3);
+    box-shadow: 0px 4px 4px rgba(25, 25, 25, 0.50);
+  }
+  .nav-link#about:hover{
+    background:rgba(120, 120, 120, 0.3);
+    color:#999999;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: 3px solid rgba(153, 153, 153, 0.9);
+
+  }
+  .nav-links:has(.nav-link:not(#about):hover) > .nav-link#about:not(:hover){
+    background-color: rgba(86, 86, 86,0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color:#999999;
+    outline: 2.5px solid rgba(153, 153, 153, 0.9);
+    /* box-sizing: border-box; */
+  }
 }

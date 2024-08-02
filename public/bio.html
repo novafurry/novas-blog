@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/7.css">
+</head>
+<body>
+<div class="window active" style="max-width: 400px">
+  <div class="title-bar">
+    <div class="title-bar-text">About Nova</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    <menu role="tablist" aria-label="Window with Tabs">
+      <button role="tab" aria-controls="music" aria-selected="true">UwU</button>
+      <button role="tab" aria-controls="dogs">OwO</button>
+      <button role="tab" aria-controls="food">:3</button>
+    </menu>
+    <article role="tabpanel" id="music">
+<table>
+    <tbody>
+        <tr class="frow"><td class="lcol"><img src="faux.png" height="40px" alt=""></td><td><input id="text26" type="text" value="NovaFurry"/></td></tr>
+    </tbody>
+</table>
+<hr>
+<table>
+    <tbody>
+        <tr class="frow"><td class="lcol">Type:</td><td>Fox</td></tr>
+        <tr class="frow"><td class="lcol">Location:</td><td>The Internet</td></tr>
+        <tr class="frow"><td class="lcol">Pronouns:</td><td>She/they</td></tr>
+        <tr class="frow"><td class="lcol">Gender:</td><td>Transgender MTF</td></tr>
+        <tr class="frow"><td class="lcol">Contains:</td><td>Autism, ADHD, Gremelins</td></tr>
+    </tbody>
+</table>
+<hr>
+<table>
+    <tbody>
+        <tr class="frow"><td class="lcol">Identites:</td><td>Fox Furry/Therian</td></tr>
+    </tbody>
+</table>
+<hr>
+<table>
+    <tbody>
+        <tr class="frow"><td class="lcol">Attributes:</td><td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="baller">
+                            <div class="field-row">
+                            <input checked type="checkbox" id="example2">
+                            <label for="example2">Silly</label>
+                          </div>
+                          <div class="field-row">
+                            <input type="checkbox" id="example2">
+                            <label for="example2">Windows Enjoyer</label>
+                          </div>
+                        </td>
+                        <td class="baller">
+                            <button>Advanced</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td></tr>
+    </tbody>
+</table>
+    </article>
+    <section class="field-row" style="justify-content: flex-end">
+      <button class="default">OK</button>
+      <button>Cancel</button>
+    </section>
+  </div>
+</div>
+<style>
+    td.lcol{
+        width:70px;
+    }
+
+    tr.frow > td > *:not(img), #text26{
+        width: 100% !important;
+    }
+    table{
+        width: 100%;
+    }
+    .frow{
+        border-bottom: 1px solid #acacac;
+    }
+    table, tbody, td, tr{
+        margin: 0px !important;
+    }
+    .field-row{
+        margin-left:0px !important;
+        padding-left:0px !important;
+    }
+</style>
+</body>
+</html>
