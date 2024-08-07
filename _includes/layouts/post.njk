@@ -3,29 +3,29 @@ layout: layouts/base.njk
 ---
 <page id="post"></page>
 <section class="card-container">
-<div class="card nobg animate__animated animate__zoomInRight">
-{# Only include the syntax highlighter CSS on blog posts #}
-{%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
-{%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
-<h1>{{ title }}</h1>
-<div class="card">
-	{{ content | safe }}
-</div>
-</div>
-<div class="card slimpanel animate__animated animate__zoomInLeft">
-	<span>Published <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></span><br>
-	<span><b>Tags:</b></span>
-	{%- for tag in tags | filterTagList %}
-	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<span><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</span><br>
-	{%- endfor %}<br><br>
-{%- if collections.posts %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-{%- set nextPost = collections.posts | getNextCollectionItem %}
-{%- if nextPost or previousPost %}
-	{%- if previousPost %}<span>Previous:<br><a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></span><br>{% endif %}
-	{%- if nextPost %}<span>Next:<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></span>{% endif %}
-{%- endif %}
-{%- endif %}
-</div>
+   <div class="card nobg animate__animated animate__zoomInRight">
+      {# Only include the syntax highlighter CSS on blog posts #}
+      {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
+      {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
+      <h1>{{ title }}</h1>
+      <div class="card">
+         {{ content | safe }}
+      </div>
+   </div>
+   <div class="card slimpanel animate__animated animate__zoomInLeft">
+      <span>Published <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></span><br>
+      <span><b>Tags:</b></span>
+      {%- for tag in tags | filterTagList %}
+      {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+      <span><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</span><br>
+      {%- endfor %}<br><br>
+      {%- if collections.posts %}
+      {%- set previousPost = collections.posts | getPreviousCollectionItem %}
+      {%- set nextPost = collections.posts | getNextCollectionItem %}
+      {%- if nextPost or previousPost %}
+      {%- if previousPost %}<span>Previous:<br><a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></span><br>{% endif %}
+      {%- if nextPost %}<span>Next:<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></span>{% endif %}
+      {%- endif %}
+      {%- endif %}
+   </div>
 </section>

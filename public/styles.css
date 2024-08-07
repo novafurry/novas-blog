@@ -103,8 +103,23 @@ spaceBelow {
     }
 }
 @media (max-width: 700px){
-  
-  body:has(page#blog, page#post)main section.card-container{
+  body:has(page#post) main section.card-container{
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas:
+    "panel"
+    "post"
+  }
+  body:has(page#post) main section.card-container .nobg{
+    max-height: 55vh;
+    overflow-x:hidden;
+  }
+  body:has(page#post) main section.card-container .nobg *{
+    max-width: 90vw;
+    overflow-x: hidden;
+    text-wrap:wrap;
+  }
+  body:has(page#blog)main section.card-container{
     grid-template-areas:
     "posts" 
     "panel" !important;
@@ -410,20 +425,22 @@ body:has(page#post){
     overflow-y: hidden;
   }
   main, .card-container{
-    padding-bottom:40px;
+    /* padding-bottom:40px; */
     max-height: calc(100vh - 80px);
   }
   .card-container > *{
-    margin-bottom:40px;
+    /* margin-bottom:40px; */
   }
   .card-container > div:not(.panel, .slimpanel){
     grid-area: posts;
     overflow-y: auto;
-    max-height: calc(100vh - 90px);
   }
   .slimpanel{
     grid-area: panel;
-    
+  }
+  .panel{
+    /* margin-bottom: 40px; */
+
   }
 }
 footer{
