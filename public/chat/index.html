@@ -31,6 +31,11 @@
     </main>
 
     <script>
+        window.onkeydown = function(e) {
+            if (e.key == 'Enter') {
+                sendMessage();
+            }
+        }
         const peer = new Peer({
             config: {
                 "iceServers": [{ urls: 'stun:freestun.net:3478' }, { urls: 'turn:freestun.net:3478', username: 'free', credential: 'free' }]
@@ -38,7 +43,16 @@
         });
 
         let conn;
-        console.log("connectin")
+        console.log("connecting to server")
+        peer.on('error', (err) => {
+            console.log(err);
+        });
+        peer.on('disconnected', () => {
+            alert("Disconnected from server. Reload the page.");
+        });
+        peer.on('close', () => {
+            alert("Disconnected from server. Reload the page.");
+        });
         peer.on('open', (id) => {
             conn = peer.connect('novaChatServerNodeUWU');
             conn.on('open', () => {
