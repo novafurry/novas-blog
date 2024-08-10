@@ -12,7 +12,8 @@
 
         #messages {
             height: calc(100vh - 150px);
-            overflow-y: scroll;
+            overflow-y: auto;
+            overflow-x: hidden;
         }
 
         #messageInput {
@@ -23,15 +24,40 @@
 
 <body>
     <main>
-        <h1>NovaChat</h1>
+        <big>NovaChat</big>
+        <input type="checkbox" name="Enable notifications?" id="ntf">
+        <label for="ntf">Enable notifications?</label>
         <input type="text" id="username" placeholder="Enter username" class="i1">
         <div id="messages" class="i1"></div>
         <input type="text" id="messageInput" placeholder="Enter message" class="i1">
-        <button onclick="sendMessage()" class="b1">Send</button>
+        <button disabled onclick="sendMessage()" class="b1">Send</button>
     </main>
 
     <script>
-        window.onkeydown = function(e) {
+        function ntf(title, body) {
+            if (!("Notification" in window)) {
+                // Check if the browser supports notifications
+                alert("This browser does not support desktop notification");
+            } else if (Notification.permission === "granted") {
+                // Check whether notification permissions have already been granted;
+                // if so, create a notification
+                const notification = new Notification(title, { body });
+                // …
+            } else if (Notification.permission !== "denied") {
+                // We need to ask the user for permission
+                Notification.requestPermission().then((permission) => {
+                    // If the user accepts, let's create a notification
+                    if (permission === "granted") {
+                        const notification = new Notification(title, { body });
+                    }
+                });
+            }
+
+            // At last, if the user has denied notifications, and you
+            // want to be respectful there is no need to bother them anymore.
+        }
+
+        window.onkeydown = function (e) {
             if (e.key == 'Enter') {
                 sendMessage();
             }
@@ -43,7 +69,75 @@
         });
 
         let conn;
+        document.querySelector('#ntf').onchange = function () {
+            if (document.querySelector('#ntf').checked) {
+                Notification.requestPermission().then((permission) => {
+                    if (permission === "granted") {
+                        const notification = new Notification('Notifications enabled', { body: 'You will now receive notifications for new messages.' });
+                    }
+                });
+            }
+            document.querySelector('#ntf').onchange = null;
+        }
         console.log("connecting to server")
+        peer.on('open', (id) => {
+            conn = peer.connect('novaChatServerNodeUWU');
+            conn.on('open', () => {
+                console.log('Connected to server');
+                conn.send({ type: "getMessages" });
+                var sendButton = document.querySelector('button');
+                sendButton.disabled = false;
+            });
+
+            conn.on('data', (data) => {
+                console.log(data)
+                if (data.type == "newMessage") {
+                    const messagesDiv = document.getElementById('messages');
+                    message = data.data;
+                    const messageElem = document.createElement('div');
+                    messageElem.classList.add('b1');
+                    messageElem.classList.add('notif');
+                    const title = document.createElement('b');
+                    title.innerText = message.username + ': ';
+                    messageElem.appendChild(title);
+                    const messageText = document.createElement('span');
+                    messageText.innerText = message.message;
+                    messageElem.appendChild(messageText);
+                    messagesDiv.appendChild(messageElem);
+                    if (document.hasFocus()) {
+                        return;
+                    } else {
+                        if (document.querySelector('#ntf').checked) {
+                            ntf(message.username, message.message);
+                        }
+                    }
+                }
+                else if (data.type == "messageHistory") {
+                    data = data.data;
+                    const messagesDiv = document.getElementById('messages');
+                    messagesDiv.innerHTML = '';
+                    data.forEach(message => {
+                        const messageElem = document.createElement('div');
+                        messageElem.classList.add('b1');
+                        messageElem.classList.add('notif');
+                        const title = document.createElement('b');
+                        title.innerText = message.username + ': ';
+                        messageElem.appendChild(title);
+                        const messageText = document.createElement('span');
+                        messageText.innerText = message.message;
+                        messageElem.appendChild(messageText);
+                        messagesDiv.appendChild(messageElem);
+                        if (document.hasFocus()) {
+                            return;
+                        } else {
+                            if (document.querySelector('#ntf').checked) {
+                                ntf(message.username, message.message);
+                            }
+                        }
+                    });
+                }
+            });
+        });
         peer.on('error', (err) => {
             console.log(err);
         });
@@ -53,35 +147,6 @@
         peer.on('close', () => {
             alert("Disconnected from server. Reload the page.");
         });
-        peer.on('open', (id) => {
-            conn = peer.connect('novaChatServerNodeUWU');
-            conn.on('open', () => {
-                console.log('Connected to server');
-                conn.send({ type: "getMessages" });
-            });
-
-            conn.on('data', (data) => {
-                console.log(data)
-                if (data.type == "newMessage") {
-                    message = data.data;
-                    const messagesDiv = document.getElementById('messages');
-                    const messageElem = document.createElement('div');
-                    messageElem.textContent = message.username + ': ' + message.message;
-                    messagesDiv.appendChild(messageElem);
-                }
-                else if (data.type == "messageHistory") {
-                    data = data.data;
-                    const messagesDiv = document.getElementById('messages');
-                    messagesDiv.innerHTML = '';
-                    data.forEach(message => {
-                        const messageElem = document.createElement('div');
-                        messageElem.textContent = message.username + ': ' + message.message;
-                        messagesDiv.appendChild(messageElem);
-                    });
-                }
-            });
-        });
-
         function sendMessage() {
             const username = document.getElementById('username').value || 'Anonymous';
             const message = document.getElementById('messageInput').value;
@@ -239,16 +304,12 @@
         }
 
         .notif {
-            width: 100%;
+            width: calc(100% + 0px);
             box-sizing: border-box;
-            background-color: var(--ui1);
-            border: 1px solid var(--ui3);
-            padding: 8px;
-            border-radius: var(--rad1);
-            margin-bottom: 5px;
             animation: notif 0.3s;
             cursor: pointer;
             text-align: left;
+            padding: 5px 5px;
             -webkit-backdrop-filter: blur(var(--bl1));
             backdrop-filter: blur(var(--bl1));
         }
@@ -343,10 +404,24 @@
         }
 
         main {
-            width: 800px;
+            width: 90vw;
             text-align: center;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        big {
+            font-size: 2em;
+            display: block;
+        }
+
+        @media screen and (min-width: 800px) {
+            main {
+                width: 50vw;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
         }
 
         div#messages {
@@ -356,6 +431,10 @@
             justify-content: flex-end;
             align-items: center;
             align-content: center;
+        }
+
+        b {
+            display: block;
         }
     </style>
 </body>
