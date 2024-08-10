@@ -4,21 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Chat Client</title>
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/peerjs@1.3.2/dist/peerjs.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
         }
 
-        #messagesContainer {
+        #messages {
             height: calc(100vh - 150px);
-            overflow-y: scroll;
+            overflow-y: auto;
             overflow-x: hidden;
         }
 
         #messageInput {
             width: 80%;
+        }
+        #messageBar{
+            position: sticky;
+            bottom: 20px;
+            z-index: 9999;
         }
     </style>
 </head>
@@ -29,11 +34,11 @@
         <input type="checkbox" name="Enable notifications?" id="ntf">
         <label for="ntf">Enable notifications?</label>
         <input type="text" id="username" placeholder="Enter username" class="i1">
-        <div id="messagesContainer" class="i1">
-            <div id="messages"></div>
+        <div id="messages" class="i1"></div>
+        <div id="messagebar">
+            <input type="text" id="messageInput" placeholder="Enter message" class="i1">
+            <button disabled onclick="sendMessage()" class="b1">Send</button>
         </div>
-        <input type="text" id="messageInput" placeholder="Enter message" class="i1">
-        <button disabled onclick="sendMessage()" class="b1">Send</button>
     </main>
 
     <script>
@@ -426,7 +431,13 @@
             }
 
         }
-
+        @media screen and (max-width: 800px) {
+            big{
+                display: inline;
+                font-size: 1em;
+            }
+            
+        }
         div#messages {
             display: flex;
             flex-direction: column-reverse;
